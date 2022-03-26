@@ -19,7 +19,7 @@ const AvailabilityForm = () => {
       }}
     >
       <Box className="bg-white text-black flex">
-        <div className="flex items-center space-x-5 p-3">
+        <div className="flex items-center space-x-10 p-3">
           <div className="space-y-2">
             <p className="text-center uppercase text-xs">
               Check-in / check-out
