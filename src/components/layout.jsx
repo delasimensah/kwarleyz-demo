@@ -1,7 +1,19 @@
 import React from "react";
 
-const layout = () => {
-  return <div>layout</div>;
+// mantine
+
+// components
+import SEO from "./seo";
+import Footer from "./footer";
+
+const layout = ({ children }) => {
+  return (
+    <>
+      <SEO />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 };
 
 export default layout;
