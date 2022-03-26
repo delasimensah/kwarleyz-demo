@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import "swiper/css/lazy";
 import "swiper/css/effect-fade";
 
+import "../assets/css/fonts.css";
 import "../assets/css/globals.css";
 
 function MyApp({ Component, pageProps }) {

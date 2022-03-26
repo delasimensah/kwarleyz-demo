@@ -66,7 +66,9 @@ const Navbar = () => {
               {links.map(({ path, label }, idx) => {
                 return (
                   <NextLink href={path} key={idx}>
-                    <a className="capitalize">{label}</a>
+                    <a className="capitalize font-gothamMedium font-light">
+                      {label}
+                    </a>
                   </NextLink>
                 );
               })}

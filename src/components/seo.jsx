@@ -48,6 +48,20 @@ const SEO = ({
         <meta key={i} name={name} content={content} />
       ))}
       <link rel="icon" href="/favicon.ico" />
+      <link
+        rel="preload"
+        href="../assets/fonts/GothamMedium.otf"
+        as="font"
+        type="font/otf"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="../assets/fonts/GothamBook.otf"
+        as="font"
+        type="font/otf"
+        crossOrigin="anonymous"
+      />
     </Head>
   );
 };

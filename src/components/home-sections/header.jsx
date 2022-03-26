@@ -2,15 +2,13 @@ import React from "react";
 import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import HeaderImage from "../../assets/images/header.jpg";
-// import HeaderImageTwo from "../../assets/images/header2.jpg";
+import HeaderImage from "../../assets/images/header1.png";
 
 // mantine
 import { Box } from "@mantine/core";
 
 // components
 import Overlay from "components/overlay";
-// import AvailabilityForm from "components/availability-form";
 
 const Header = () => {
   return (
@@ -41,8 +39,6 @@ const Header = () => {
           </Box>
         </SwiperSlide>
       </Swiper>
-
-      {/* <AvailabilityForm /> */}
     </Box>
   );
 };

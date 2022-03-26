@@ -10,7 +10,12 @@ import Footer from "./footer";
 
 const layout = ({ children }) => {
   return (
-    <MantineProvider theme={{ fontFamily: "Open Sans" }}>
+    <MantineProvider
+      theme={{
+        fontFamily: "Gotham Book",
+        headings: { fontFamily: "Gotham Medium" },
+      }}
+    >
       <SEO />
       <Navbar />
       <main>{children}</main>
