@@ -40,3 +40,8 @@ a {
 .swiper-pagination-bullet-active {
   background: white !important;
 }
+
+.is-sticky header {
+  background-color: #fff;
+  color: black;
+}
