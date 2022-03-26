@@ -34,7 +34,7 @@ const SectionFour = () => {
         </div>
 
         <div className="">
-          <Fade top distance="100px">
+          <Fade top distance="100px" delay={500}>
             <div className="relative -left-10 z-30 -bottom-40">
               <div className="absolute top-0 left-0 w-full h-full z-20 text-white flex justify-center items-center">
                 <div className="w-60 h-60">

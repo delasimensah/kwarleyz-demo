@@ -1,5 +1,5 @@
 import React from "react";
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay, Lazy } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import HeaderImage from "../../assets/images/header1.png";
@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <Box sx={{ height: "100vh", position: "relative" }}>
       <Swiper
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay, Lazy]}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
@@ -26,6 +26,8 @@ const Header = () => {
           disableOnInteraction: false,
         }}
         loop={true}
+        lazy={true}
+        className="mySwiper"
       >
         {array.map((_, idx) => {
           return (
@@ -35,6 +37,7 @@ const Header = () => {
                   height: "100vh",
                   position: "relative",
                 }}
+                className="swiper-lazy"
               >
                 <Caption />
 
@@ -42,6 +45,7 @@ const Header = () => {
 
                 <Image src={HeaderImage} alt="header image" />
               </Box>
+              <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
           );
         })}

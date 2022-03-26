@@ -42,7 +42,6 @@ const Footer = () => {
               <TextInput
                 variant="unstyled"
                 className="border-b w-full"
-                fullwidth
                 placeholder="Email address"
               />
 
