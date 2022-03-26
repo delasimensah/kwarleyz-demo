@@ -4,7 +4,7 @@ import React from "react";
 import { Box } from "@mantine/core";
 
 const Explore = () => {
-  return <Box>Explore Section</Box>;
+  return <Box sx={{ height: "200px" }}>Explore Section</Box>;
 };
 
 export default Explore;
