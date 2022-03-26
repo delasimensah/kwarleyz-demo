@@ -1,7 +1,8 @@
 import React from "react";
+import { IoAddOutline, IoRemoveOutline } from "react-icons/io5";
 
 // mantine
-import { Box } from "@mantine/core";
+import { Box, TextInput, Button, ActionIcon } from "@mantine/core";
 
 const AvailabilityForm = () => {
   return (
@@ -17,8 +18,51 @@ const AvailabilityForm = () => {
         alignItems: "center",
       }}
     >
-      <Box sx={{ width: "50%", color: "white", border: "1px solid white" }}>
-        Content
+      <Box className="bg-white text-black flex">
+        <div className="flex items-center space-x-5 p-3">
+          <div className="space-y-2">
+            <p className="text-center uppercase text-xs">
+              Check-in / check-out
+            </p>
+            <TextInput size="xs" radius={0} />
+          </div>
+
+          <div className="space-y-2">
+            <p className="text-center uppercase text-xs">Adults</p>
+            <div className="flex items-center space-x-5">
+              <ActionIcon className="border border-gray-200" radius={50}>
+                <IoRemoveOutline />
+              </ActionIcon>
+              <span>1</span>
+              <ActionIcon className="border border-gray-200" radius={50}>
+                <IoAddOutline />
+              </ActionIcon>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <p className="text-center uppercase text-xs">Children</p>
+            <div className="flex items-center space-x-5">
+              <ActionIcon className="border border-gray-200" radius={50}>
+                <IoRemoveOutline />
+              </ActionIcon>
+              <span>1</span>
+              <ActionIcon className="border border-gray-200" radius={50}>
+                <IoAddOutline />
+              </ActionIcon>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <p className="text-center uppercase text-xs">Promo Code</p>
+            <TextInput size="xs" radius={0} />
+          </div>
+        </div>
+        <div className="flex items-center justify-center bg-[#53565A]">
+          <Button className="w-full h-full bg-[#53565A] hover:bg-[#53565A] uppercase text-xs">
+            Check Availability
+          </Button>
+        </div>
       </Box>
     </Box>
   );

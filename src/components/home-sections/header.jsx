@@ -8,7 +8,11 @@ import HeaderImage from "../../assets/images/header1.png";
 import { Box } from "@mantine/core";
 
 // components
-import Overlay from "components/overlay";
+import Caption from "../caption";
+import Overlay from "../overlay";
+import AvailabilityForm from "components/availability-form";
+
+const array = new Array(3).fill(0);
 
 const Header = () => {
   return (
@@ -18,27 +22,31 @@ const Header = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 6000,
+          delay: 20000,
           disableOnInteraction: false,
         }}
-        className="mySwiper"
       >
-        <SwiperSlide>
-          <Box
-            sx={{
-              height: "100vh",
-              position: "relative",
-            }}
-          >
-            <Overlay />
-            <Image
-              src={HeaderImage}
-              alt="Picture of the author"
-              className="swiper-lazy"
-            />
-          </Box>
-        </SwiperSlide>
+        {array.map((_, idx) => {
+          return (
+            <SwiperSlide key={idx}>
+              <Box
+                sx={{
+                  height: "100vh",
+                  position: "relative",
+                }}
+              >
+                <Caption />
+
+                <Overlay />
+
+                <Image src={HeaderImage} alt="header image" />
+              </Box>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
+
+      <AvailabilityForm />
     </Box>
   );
 };
