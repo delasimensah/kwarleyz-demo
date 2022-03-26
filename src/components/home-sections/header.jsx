@@ -22,9 +22,10 @@ const Header = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 20000,
+          delay: 10000,
           disableOnInteraction: false,
         }}
+        loop={true}
       >
         {array.map((_, idx) => {
           return (

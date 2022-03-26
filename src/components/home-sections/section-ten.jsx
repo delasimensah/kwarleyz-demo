@@ -14,7 +14,7 @@ const SectionTen = () => {
             The African Dream
           </p>
 
-          <p className="w-2/5">
+          <p className="w-2/5 leading-loose">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             mollitia, molestiae quas vel sint commodi repudiandae consequuntur
             voluptatum laborum numquam blanditiis harum quisquam eius sed
@@ -22,7 +22,7 @@ const SectionTen = () => {
 
           <Button
             variant="filled"
-            className="bg-[#53565A] text-white hover:bg-white hover:text-[#53565A] w-40"
+            className="bg-[#53565A] text-white hover:bg-white hover:text-[#53565A] w-40 uppercase"
             radius={0}
           >
             Know More

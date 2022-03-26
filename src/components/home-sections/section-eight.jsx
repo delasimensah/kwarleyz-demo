@@ -10,15 +10,15 @@ import { Button } from "@mantine/core";
 
 const SectionEight = () => {
   return (
-    <div className="h-[1500px]">
-      <div className="w-4/5 mx-auto bg-white -top-[300px]  relative">
+    <div className="h-[1550px]">
+      <div className="w-4/5 mx-auto bg-white -top-[250px]  relative">
         <div className="grid grid-cols-2 gap-20 p-20">
           <div className="flex flex-col space-y-5">
             <p className="text-2xl capitalize font-gothamMedium">
               Celebrity Chef
             </p>
 
-            <p className="text-sm">
+            <p className="text-sm leading-loose">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -49,7 +49,7 @@ const SectionEight = () => {
               bar and nightlife
             </p>
 
-            <p className="text-sm">
+            <p className="text-sm leading-loose">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -72,7 +72,7 @@ const SectionEight = () => {
               {"Ghana's best brunches"}
             </p>
 
-            <p className="text-sm">
+            <p className="text-sm leading-loose">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -103,7 +103,7 @@ const SectionEight = () => {
               bar and nightlife
             </p>
 
-            <p className="text-sm">
+            <p className="text-sm leading-loose">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit

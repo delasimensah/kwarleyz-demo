@@ -27,7 +27,7 @@ const Footer = () => {
         <Button
           variant="filled"
           radius={0}
-          className="text-black button bg-white w-40 uppercase hover:bg-black hover:text-white"
+          className="text-black button bg-white w-40 uppercase hover:bg-black hover:border hover:border-white hover:text-white"
         >
           Reserve Now
         </Button>

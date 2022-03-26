@@ -15,7 +15,7 @@ const Caption = () => {
         {"You don't check-in; you move in "}
       </Title>
 
-      <Text className="w-1/2">
+      <Text className="w-1/2 leading-loose">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
         mollitia, molestiae quas vel sint commodi repudiandae consequuntur
         voluptatum laborum numquam blanditiis harum quisquam eius sed odit
