@@ -10,7 +10,7 @@ import { Box } from "@mantine/core";
 // components
 import Caption from "../caption";
 import Overlay from "../overlay";
-import AvailabilityForm from "components/availability-form";
+import AvailabilityForm from "../availability-form";
 
 const array = new Array(3).fill(0);
 
