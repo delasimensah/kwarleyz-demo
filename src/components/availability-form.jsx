@@ -6,8 +6,8 @@ import { TextInput, Button, ActionIcon } from "@mantine/core";
 
 const AvailabilityForm = () => {
   return (
-    <div className="absolute left-0 z-20 flex items-center justify-center w-screen bottom-10">
-      <div className="flex text-black bg-white border border-red-500">
+    <div className="absolute left-0 z-20 flex items-center justify-center w-screen border border-blue-500 bottom-10 h-[300px]">
+      {/* <div className="flex text-black bg-white border border-red-500">
         <div className="flex items-center p-3 space-x-10">
           <div className="space-y-2">
             <p className="text-xs text-center uppercase">
@@ -53,7 +53,7 @@ const AvailabilityForm = () => {
             Check Availability
           </Button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
