@@ -5,11 +5,11 @@ const SectionFive = () => {
   return (
     <div className="p-14">
       <Zoom>
-        <div className="shadow-xl p-10 flex items-center space-x-20 border border-gray-100">
+        <div className="flex items-center p-10 space-x-20 border border-gray-100 shadow-xl">
           <p className="text-3xl uppercase font-gothamMedium">
             Important Update
           </p>
-          <p className="flex-grow text-sm leading-loose">
+          <p className="flex-grow text-sm leading-relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             mollitia, molestiae quas vel sint commodi repudiandae consequuntur
             voluptatum laborum numquam blanditiis harum quisquam eius sed odit

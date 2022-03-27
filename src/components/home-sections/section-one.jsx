@@ -24,7 +24,7 @@ const SectionOne = () => {
                   No.1 Oxford street hotels & suites
                 </p>
 
-                <p className="text-sm text-[#544F4F] text-left leading-loose">
+                <p className="text-sm text-[#544F4F] text-left leading-relaxed">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maxime mollitia, molestiae quas vel sint commodi repudiandae
                   consequuntur voluptatum laborum numquam blanditiis harum

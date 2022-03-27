@@ -22,7 +22,7 @@ const SectionNine = () => {
                   Tick Off Your Bucket List
                 </p>
 
-                <p className="w-2/3 text-sm leading-loose text-left text-white">
+                <p className="w-2/3 text-sm leading-relaxed text-left text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maxime mollitia, molestiae quas vel sint commodi repudiandae
                   consequuntur voluptatum laborum numquam blanditiis harum

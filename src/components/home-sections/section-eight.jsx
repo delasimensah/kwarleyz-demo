@@ -20,7 +20,7 @@ const SectionEight = () => {
                 Celebrity Chef
               </p>
 
-              <p className="text-sm leading-loose">
+              <p className="text-sm leading-relaxed">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
@@ -57,7 +57,7 @@ const SectionEight = () => {
                 bar and nightlife
               </p>
 
-              <p className="text-sm leading-loose">
+              <p className="text-sm leading-relaxed">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
@@ -82,7 +82,7 @@ const SectionEight = () => {
                 {"Ghana's best brunches"}
               </p>
 
-              <p className="text-sm leading-loose">
+              <p className="text-sm leading-relaxed">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
@@ -119,7 +119,7 @@ const SectionEight = () => {
                 bar and nightlife
               </p>
 
-              <p className="text-sm leading-loose">
+              <p className="text-sm leading-relaxed">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum

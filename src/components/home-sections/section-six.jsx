@@ -36,9 +36,10 @@ const SectionSix = () => {
 
         <div className="h-[2px] w-40 bg-[#C8C6C6]" />
 
-        <p className="w-2/3 leading-loose text-center">
+        <p className="w-2/3 leading-relaxed text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
           mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+          voluptatum laborum numquam blanditiis harum quisquam eius sed,
           voluptatum laborum numquam blanditiis harum quisquam eius sed
         </p>
       </div>

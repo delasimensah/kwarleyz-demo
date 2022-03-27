@@ -47,7 +47,7 @@ const SectionTwo = () => {
                 <Fade left distance="10px" delay={200}>
                   <div className="flex flex-col space-y-5">
                     <p className="text-[#53565A] text-2xl">Spring Sale</p>
-                    <p className="text-[#544F4F] text-sm leading-loose">
+                    <p className="text-[#544F4F] text-sm leading-relaxed">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Maxime mollitia, molestiae quas vel sint commodi
                       repudiandae consequuntur voluptatum laborum numquam

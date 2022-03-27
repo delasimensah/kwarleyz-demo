@@ -18,7 +18,7 @@ const SectionFour = () => {
                   atlantis Aquaventure
                 </p>
 
-                <p className="w-2/3 text-sm leading-loose text-center text-white">
+                <p className="w-2/3 text-sm leading-relaxed text-center text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maxime mollitia, molestiae quas vel sint commodi repudiandae
                   consequuntur voluptatum laborum numquam blanditiis harum

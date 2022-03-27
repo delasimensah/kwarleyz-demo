@@ -14,7 +14,7 @@ const SectionThree = () => {
               atlantis Aquaventure
             </p>
 
-            <p className="text-sm   text-[#544F4F] text-center leading-loose">
+            <p className="text-sm   text-[#544F4F] text-center leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit

@@ -16,7 +16,7 @@ const SectionTen = () => {
               The African Dream
             </p>
 
-            <p className="w-2/5 leading-loose">
+            <p className="w-2/5 leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed
