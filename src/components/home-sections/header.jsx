@@ -1,9 +1,8 @@
 import React from "react";
-import { Pagination, Autoplay, Navigation } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import HeaderImage from "../../assets/images/header1.png";
-import { Fade } from "react-reveal";
 
 // components
 import Caption from "../caption";
@@ -16,17 +15,16 @@ const Header = () => {
   return (
     <div>
       <Swiper
-        modules={[Pagination, Autoplay, Navigation]}
+        modules={[Pagination, Autoplay]}
         slidesPerView={1}
         spaceBetween={0}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 5000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
         loop={true}
         speed={2000}
-        navigation={true}
       >
         {array.map((_, idx) => {
           return (

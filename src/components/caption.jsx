@@ -9,31 +9,60 @@ import { Button } from "@mantine/core";
 const Caption = () => {
   return (
     <div className="relative z-50 flex flex-col justify-center w-full h-full px-20 space-y-6 text-white bg-transparent">
-      <p className="text-4xl capitalize font-gothamMedium">
+      <motion.p
+        initial={{ opacity: 0, translateY: -50 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1 }}
+        className="text-4xl capitalize font-gothamMedium"
+      >
         {"You don't check-in; you move in "}
-      </p>
+      </motion.p>
 
-      <p className="w-1/2 leading-relaxed">
+      <motion.p
+        initial={{ opacity: 0, translateX: -50 }}
+        animate={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="w-1/2 leading-relaxed"
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
         mollitia, molestiae quas vel sint commodi repudiandae consequuntur
         voluptatum laborum numquam blanditiis harum quisquam eius sed odit
         fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
         accusantium nemo autem.
-      </p>
+      </motion.p>
 
-      <Link href="/" passHref>
-        <Button
-          variant="filled"
-          radius={0}
-          className="w-40 text-black uppercase bg-white border border-white button hover:bg-black hover:text-white"
-        >
-          Explore
-        </Button>
-      </Link>
+      <motion.div
+        initial={{ opacity: 0, translateY: 50 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1, delay: 2 }}
+      >
+        <Link href="/" passHref>
+          <Button
+            variant="filled"
+            radius={0}
+            className="w-40 text-black uppercase bg-white button hover:bg-black hover:text-white"
+          >
+            Explore
+          </Button>
+        </Link>
+      </motion.div>
 
       <div className="space-y-4">
-        <IoCallSharp size="25px" />
-        <IoMailOutline size="25px" />
+        <motion.div
+          initial={{ opacity: 0, translateX: -50 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1, delay: 3 }}
+        >
+          <IoCallSharp size="25px" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, translateX: -50 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1, delay: 3.5 }}
+        >
+          <IoMailOutline size="25px" />
+        </motion.div>
       </div>
     </div>
   );
