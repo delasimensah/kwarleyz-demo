@@ -1,17 +1,75 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import Image from "next/image";
+import { Fade } from "react-reveal";
+
+import Img1 from "../../assets/images/section6/img1.png";
+import Img2 from "../../assets/images/section6/img2.png";
+
+// import "./styles.css";
+
+const array = [
+  { img: Img1 },
+  { img: Img2 },
+  { img: Img1 },
+  { img: Img2 },
+  { img: Img1 },
+  { img: Img2 },
+  { img: Img1 },
+  { img: Img2 },
+  { img: Img1 },
+  { img: Img2 },
+];
 
 const SectionSix = () => {
   return (
-    <div className="bg-white p-10 h-[500px] flex flex-col items-center space-y-3">
-      <p className="text-3xl uppercase font-gothamMedium">Stay with us</p>
+    <div className="px-20 py-10 space-y-10">
+      <div className="flex flex-col items-center space-y-3">
+        <p className="text-3xl uppercase font-gothamMedium">Stay with us</p>
 
-      <div className="h-[2px] w-40 bg-[#C8C6C6]" />
+        <div className="h-[2px] w-40 bg-[#C8C6C6]" />
 
-      <p className="text-center w-2/3 leading-loose">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed
-      </p>
+        <p className="w-2/3 leading-loose text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+          voluptatum laborum numquam blanditiis harum quisquam eius sed
+        </p>
+      </div>
+
+      <Fade left distance="100px" delay={200}>
+        <Swiper
+          effect={"coverflow"}
+          slidesPerView={3}
+          coverflowEffect={{
+            rotate: 10,
+            stretch: 15,
+            depth: 80,
+            modifier: 1,
+            slideShadows: false,
+            scale: 0.7,
+          }}
+          modules={[EffectCoverflow, Navigation]}
+          spaceBetween={0}
+          navigation={true}
+        >
+          {array.map(({ img }, idx) => {
+            return (
+              <SwiperSlide key={idx}>
+                <div className="h-[350px]">
+                  <Image
+                    src={img}
+                    alt=""
+                    placeholder="blur"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </Fade>
     </div>
   );
 };

@@ -4,8 +4,8 @@
 
 :root {
   --swiper-theme-color: #fff;
-  --swiper-navigation-color: #c4c2c2;
-  --swiper-navigation-size: 20px;
+  --swiper-navigation-color: #000;
+  --swiper-navigation-size: 30px;
 }
 
 html,
@@ -57,7 +57,7 @@ a {
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: 10px;
   right: auto;
@@ -81,4 +81,4 @@ a {
   background-color: #fff;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3),
     0 8px 10px -6px rgb(0 0 0 / 0.3);
-}
+} */

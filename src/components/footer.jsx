@@ -10,24 +10,24 @@ import insta from "../assets/images/insta-logo.svg";
 import trip from "../assets/images/trip-logo.svg";
 
 // mantine
-import { Box, Button, TextInput, ActionIcon } from "@mantine/core";
+import { Button, TextInput, ActionIcon } from "@mantine/core";
 
 const Footer = () => {
   return (
-    <Box className="bg-black text-white py-10 px-20 space-y-3">
+    <div className="px-20 py-10 space-y-3 text-white bg-black">
       <div className="flex items-center justify-between pb-10 border-b">
-        <Box className="w-24 h-24">
+        <div className="w-24 h-24">
           <NextLink href="/">
             <a>
               <Image src={logo} alt="logo" className="text-black" />
             </a>
           </NextLink>
-        </Box>
+        </div>
 
         <Button
           variant="filled"
           radius={0}
-          className="text-black button bg-white w-40 uppercase hover:bg-black hover:border hover:border-white hover:text-white"
+          className="w-40 text-black uppercase bg-white button hover:bg-black hover:border hover:border-white hover:text-white"
         >
           Reserve Now
         </Button>
@@ -36,17 +36,17 @@ const Footer = () => {
       <div className="grid grid-cols-6 gap-10 py-10">
         <div className="col-span-2 space-y-20">
           <div className="space-y-10">
-            <p className="text-xl w-3/5">Subscribe to our newsletter</p>
+            <p className="w-3/5 text-xl">Subscribe to our newsletter</p>
 
             <div className="flex">
               <TextInput
                 variant="unstyled"
-                className="border-b w-full"
+                className="w-full border-b"
                 placeholder="Email address"
               />
 
               <div className="bg-white">
-                <ActionIcon className="bg-white h-full w-10" radius={0}>
+                <ActionIcon className="w-10 h-full bg-white" radius={0}>
                   <IoChevronForward size="20px" />
                 </ActionIcon>
               </div>
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="space-y-3 flex flex-col">
+        <div className="flex flex-col space-y-3">
           <NextLink href="/">
             <a className="capitalize">{"what's on"}</a>
           </NextLink>
@@ -82,7 +82,7 @@ const Footer = () => {
           </NextLink>
         </div>
 
-        <div className="space-y-3 flex flex-col">
+        <div className="flex flex-col space-y-3">
           <NextLink href="/">
             <a className="capitalize">{"memberships"}</a>
           </NextLink>
@@ -100,7 +100,7 @@ const Footer = () => {
           </NextLink>
         </div>
 
-        <div className="space-y-3 flex flex-col">
+        <div className="flex flex-col space-y-3">
           <NextLink href="/">
             <a className="capitalize">{"about"}</a>
           </NextLink>
@@ -128,7 +128,7 @@ const Footer = () => {
           </NextLink>
         </div>
 
-        <div className="space-y-3 flex flex-col">
+        <div className="flex flex-col space-y-3">
           <NextLink href="/">
             <a className="capitalize">{"atlantis dubai"}</a>
           </NextLink>
@@ -197,7 +197,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </Box>
+    </div>
   );
 };
 

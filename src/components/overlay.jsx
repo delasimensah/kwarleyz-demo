@@ -1,16 +1,8 @@
 import React from "react";
 
-// mantine
-import { Box } from "@mantine/core";
-
 const Overlay = () => {
   return (
-    <Box
-      className="absolute top-0 left-0 h-full w-full bg-black/30"
-      sx={{
-        zIndex: 1000,
-      }}
-    />
+    <div className="absolute top-0 left-0 z-40 w-full h-full bg-black/30" />
   );
 };
 

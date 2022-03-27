@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { Zoom, Fade } from "react-reveal";
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import Img1 from "../../assets/images/section9/img1.png";
 
-import { Button, Box } from "@mantine/core";
+import { Button } from "@mantine/core";
 
 const array = new Array(3).fill(0);
 
@@ -49,17 +49,19 @@ const SectionNine = () => {
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 autoplay={{
-                  delay: 5000,
+                  delay: 6000,
                   disableOnInteraction: false,
                 }}
                 loop={true}
+                spaceBetween={20}
+                navigation={true}
               >
                 {array.map((_, idx) => {
                   return (
                     <SwiperSlide key={idx}>
-                      <Box className="relative h-[500px]">
+                      <div className="relative h-[500px]">
                         <Image src={Img1} alt="" placeholder="blur" />
-                      </Box>
+                      </div>
                     </SwiperSlide>
                   );
                 })}

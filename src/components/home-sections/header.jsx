@@ -1,11 +1,8 @@
 import React from "react";
-import { Pagination, Autoplay, Lazy } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import HeaderImage from "../../assets/images/header1.png";
-
-// mantine
-import { Box } from "@mantine/core";
 
 // components
 import Caption from "../caption";
@@ -16,9 +13,9 @@ const array = new Array(3).fill(0);
 
 const Header = () => {
   return (
-    <Box sx={{ height: "100vh", position: "relative" }}>
+    <div className="relative h-screen">
       <Swiper
-        modules={[Pagination, Autoplay, Lazy]}
+        modules={[Pagination, Autoplay]}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
@@ -26,19 +23,11 @@ const Header = () => {
           disableOnInteraction: false,
         }}
         loop={true}
-        lazy={true}
-        className="mySwiper"
       >
         {array.map((_, idx) => {
           return (
             <SwiperSlide key={idx}>
-              <Box
-                sx={{
-                  height: "100vh",
-                  position: "relative",
-                }}
-                className="swiper-lazy"
-              >
+              <div className="relative h-screen">
                 <Caption />
 
                 <Overlay />
@@ -48,15 +37,14 @@ const Header = () => {
                   alt="header image"
                   placeholder="blur"
                 />
-              </Box>
-              <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
             </SwiperSlide>
           );
         })}
       </Swiper>
 
       <AvailabilityForm />
-    </Box>
+    </div>
   );
 };
 

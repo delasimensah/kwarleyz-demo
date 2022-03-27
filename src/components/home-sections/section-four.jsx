@@ -38,7 +38,7 @@ const SectionFour = () => {
             <div className="relative z-30 -left-10 -bottom-40">
               <div className="absolute top-0 left-0 z-20 flex items-center justify-center w-full h-full text-white">
                 <div className="w-60 h-60">
-                  <Image src={Logo} alt="" placeholder="blur" />
+                  <Image src={Logo} alt="" />
                 </div>
               </div>
               <Image src={Img2} alt="" placeholder="blur" />

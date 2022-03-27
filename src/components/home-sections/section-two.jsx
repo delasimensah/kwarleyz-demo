@@ -10,7 +10,7 @@ import Img3 from "../../assets/images/section2/img3.png";
 import Img4 from "../../assets/images/section2/img4.png";
 
 // mantine
-import { Box, Button } from "@mantine/core";
+import { Button } from "@mantine/core";
 
 // components
 import AvailabilityForm from "../availability-form";
@@ -28,7 +28,7 @@ const array = [
 
 const SectionTwo = () => {
   return (
-    <Box className="">
+    <div className="">
       <Swiper
         modules={[Pagination, Navigation]}
         slidesPerView={4}
@@ -70,7 +70,7 @@ const SectionTwo = () => {
       </Swiper>
 
       <AvailabilityForm />
-    </Box>
+    </div>
   );
 };
 

@@ -1,8 +1,7 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/lazy";
-import "swiper/css/effect-fade";
+import "swiper/css/effect-coverflow";
 
 import "../assets/css/fonts.css";
 import "../assets/css/globals.css";

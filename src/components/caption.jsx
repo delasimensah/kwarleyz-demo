@@ -3,15 +3,12 @@ import Link from "next/link";
 import { IoMailOutline, IoCallSharp } from "react-icons/io5";
 
 // mantine
-import { Box, Title, Text, Button } from "@mantine/core";
+import { Title, Text, Button } from "@mantine/core";
 
 const Caption = () => {
   return (
-    <Box
-      className="absolute h-full w-full flex flex-col justify-center px-20 text-white space-y-6"
-      sx={{ zIndex: 1500 }}
-    >
-      <Title className="capitalize text-4xl">
+    <div className="absolute z-50 flex flex-col justify-center w-full h-full px-20 space-y-6 text-white">
+      <Title className="text-4xl capitalize">
         {"You don't check-in; you move in "}
       </Title>
 
@@ -27,17 +24,17 @@ const Caption = () => {
         <Button
           variant="filled"
           radius={0}
-          className="text-black button bg-white w-40 uppercase hover:bg-black hover:text-white"
+          className="w-40 text-black uppercase bg-white button hover:bg-black hover:text-white"
         >
           Explore
         </Button>
       </Link>
 
-      <Box className="space-y-4">
+      <div className="space-y-4">
         <IoCallSharp size="25px" />
         <IoMailOutline size="25px" />
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 

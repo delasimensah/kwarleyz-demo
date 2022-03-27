@@ -46,7 +46,7 @@ const Navbar = () => {
         zIndex: 20000,
       }}
     >
-      <Box className="w-full px-20 py-3 flex justify-between items-center">
+      <Box className="flex items-center justify-between w-full px-20 py-3 bg-transparent">
         <Box className="w-24 h-24">
           <NextLink href="/">
             <a>
@@ -55,11 +55,11 @@ const Navbar = () => {
           </NextLink>
         </Box>
 
-        <Box className="space-x-16 flex items-center">
+        <Box className="flex items-center space-x-16">
           {links.map(({ path, label }, idx) => {
             return (
               <NextLink href={path} key={idx}>
-                <a className="capitalize font-gothamMedium font-light">
+                <a className="font-light capitalize font-gothamMedium">
                   {label}
                 </a>
               </NextLink>
