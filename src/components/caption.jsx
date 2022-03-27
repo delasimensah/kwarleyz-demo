@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { IoMailOutline, IoCallSharp } from "react-icons/io5";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 // mantine
 import { Button } from "@mantine/core";

@@ -25,50 +25,47 @@ const array = [
 
 const SectionTwo = () => {
   return (
-    <div className="relative">
-      <Swiper
-        modules={[Pagination, Navigation]}
-        slidesPerView={4}
-        spaceBetween={50}
-        navigation={true}
-        className="px-12"
-        speed={2000}
-      >
-        {array.map(({ img }, idx) => {
-          return (
-            <SwiperSlide key={idx}>
-              <div className="space-y-5">
-                <Fade left distance="20px">
-                  <Image src={img} alt="" placeholder="blur" />
-                </Fade>
+    <Swiper
+      modules={[Pagination, Navigation]}
+      slidesPerView={4}
+      spaceBetween={50}
+      navigation={true}
+      className="px-12"
+      speed={2000}
+    >
+      {array.map(({ img }, idx) => {
+        return (
+          <SwiperSlide key={idx}>
+            <div className="space-y-5">
+              <Fade left distance="20px">
+                <Image src={img} alt="" placeholder="blur" />
+              </Fade>
 
-                <Fade left distance="10px" delay={200}>
-                  <div className="flex flex-col space-y-5">
-                    <p className="text-[#53565A] text-2xl font-gothamMedium">
-                      Spring Sale
-                    </p>
-                    <p className="text-[#544F4F] text-sm leading-relaxed">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maxime mollitia, molestiae quas vel sint commodi
-                      repudiandae consequuntur voluptatum laborum numquam
-                      blanditiis .{" "}
-                    </p>
+              <Fade left distance="50px" delay={500}>
+                <div className="flex flex-col space-y-5">
+                  <p className="text-[#53565A] text-2xl font-gothamMedium">
+                    Spring Sale
+                  </p>
+                  <p className="text-[#544F4F] text-sm leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia, molestiae quas vel sint commodi repudiandae
+                    consequuntur voluptatum laborum numquam blanditiis .{" "}
+                  </p>
 
-                    <Button
-                      variant="filled"
-                      className="bg-[#53565A] text-white hover:bg-white hover:text-[#53565A] hover:border hover:border-[#53565A] w-40 uppercase"
-                      radius={0}
-                    >
-                      Know More
-                    </Button>
-                  </div>
-                </Fade>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
+                  <Button
+                    variant="filled"
+                    className="bg-[#53565A] text-white hover:bg-white hover:text-[#53565A] hover:border hover:border-[#53565A] w-40 uppercase"
+                    radius={0}
+                  >
+                    Know More
+                  </Button>
+                </div>
+              </Fade>
+            </div>
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
   );
 };
 
