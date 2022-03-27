@@ -18,7 +18,7 @@ const SectionOne = () => {
 
         <div className="flex flex-col items-center justify-center col-span-2 space-y-5">
           <Fade left distance="100px" delay={500}>
-            <div className="w-[130%] relative -left-[100px] z-20 space-y-5">
+            <div className="w-[100%] relative -left-[100px] z-20 space-y-5">
               <div className="p-20 space-y-5 bg-white border shadow-xl border-gray-50">
                 <p className="text-3xl font-gothamMedium uppercase text-left  text-[#53565A]">
                   No.1 Oxford street hotels & suites
