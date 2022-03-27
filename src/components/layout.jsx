@@ -18,7 +18,7 @@ const layout = ({ children }) => {
     >
       <SEO />
       <Navbar />
-      <main>{children}</main>
+      <main className="overflow-x-hidden max-w-screen">{children}</main>
       <Footer />
     </MantineProvider>
   );
