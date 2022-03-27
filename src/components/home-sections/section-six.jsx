@@ -52,7 +52,7 @@ const SectionSix = () => {
             stretch: 15,
             depth: 80,
             modifier: 1,
-            slideShadows: false,
+            slideShadows: true,
             scale: 0.7,
           }}
           modules={[EffectCoverflow, Navigation]}
