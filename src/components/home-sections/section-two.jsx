@@ -12,9 +12,6 @@ import Img4 from "../../assets/images/section2/img4.png";
 // mantine
 import { Button } from "@mantine/core";
 
-// components
-import AvailabilityForm from "../availability-form";
-
 const array = [
   { img: Img1 },
   { img: Img2 },
@@ -28,7 +25,7 @@ const array = [
 
 const SectionTwo = () => {
   return (
-    <div className="">
+    <div className="relative">
       <Swiper
         modules={[Pagination, Navigation]}
         slidesPerView={4}
@@ -46,7 +43,9 @@ const SectionTwo = () => {
 
                 <Fade left distance="10px" delay={200}>
                   <div className="flex flex-col space-y-5">
-                    <p className="text-[#53565A] text-2xl">Spring Sale</p>
+                    <p className="text-[#53565A] text-2xl font-gothamMedium">
+                      Spring Sale
+                    </p>
                     <p className="text-[#544F4F] text-sm leading-relaxed">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Maxime mollitia, molestiae quas vel sint commodi
@@ -68,8 +67,6 @@ const SectionTwo = () => {
           );
         })}
       </Swiper>
-
-      <AvailabilityForm />
     </div>
   );
 };
