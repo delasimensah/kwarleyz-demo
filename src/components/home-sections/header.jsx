@@ -19,11 +19,11 @@ const Header = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 6000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         loop={true}
-        speed={1500}
+        speed={2000}
       >
         {array.map((_, idx) => {
           return (

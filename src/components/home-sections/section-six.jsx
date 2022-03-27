@@ -59,6 +59,7 @@ const SectionSix = () => {
           modules={[EffectCoverflow, Navigation]}
           spaceBetween={0}
           navigation={true}
+          speed={2000}
         >
           {array.map(({ img }, idx) => {
             return (

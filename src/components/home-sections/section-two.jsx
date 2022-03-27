@@ -32,6 +32,7 @@ const SectionTwo = () => {
         spaceBetween={50}
         navigation={true}
         className="px-12"
+        speed={2000}
       >
         {array.map(({ img }, idx) => {
           return (
