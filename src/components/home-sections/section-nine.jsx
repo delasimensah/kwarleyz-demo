@@ -18,11 +18,11 @@ const SectionNine = () => {
           <Zoom distance="100px">
             <div className="relative -top-10 -right-10 bg-[#A8A7A7]">
               <div className=" w-full h-[500px] p-20 z-20 text-white flex flex-col border justify-center space-y-5">
-                <p className="text-3xl font-gothamMedium capitalize text-left text-white w-1/2">
+                <p className="w-1/2 text-3xl text-left text-white capitalize font-gothamMedium">
                   Tick Off Your Bucket List
                 </p>
 
-                <p className="text-sm w-2/3 text-white text-left leading-loose">
+                <p className="w-2/3 text-sm leading-loose text-left text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maxime mollitia, molestiae quas vel sint commodi repudiandae
                   consequuntur voluptatum laborum numquam blanditiis harum
@@ -32,7 +32,7 @@ const SectionNine = () => {
                 <Button
                   variant="outline"
                   radius={0}
-                  className="text-white border border-white hover:bg-white hover:text-black w-40 uppercase"
+                  className="w-40 text-white uppercase border border-white hover:bg-white hover:text-black"
                 >
                   Explore
                 </Button>
@@ -43,7 +43,7 @@ const SectionNine = () => {
 
         <div className="">
           <Fade delay={500}>
-            <div className="relative -left-20 z-30 -bottom-20">
+            <div className="relative z-30 -left-20 -bottom-20">
               <Swiper
                 modules={[Pagination, Navigation, Autoplay]}
                 slidesPerView={1}
@@ -57,13 +57,8 @@ const SectionNine = () => {
                 {array.map((_, idx) => {
                   return (
                     <SwiperSlide key={idx}>
-                      <Box
-                        sx={{
-                          height: "500px",
-                          position: "relative",
-                        }}
-                      >
-                        <Image src={Img1} alt="header image" />
+                      <Box className="relative h-[500px]">
+                        <Image src={Img1} alt="" placeholder="blur" />
                       </Box>
                     </SwiperSlide>
                   );

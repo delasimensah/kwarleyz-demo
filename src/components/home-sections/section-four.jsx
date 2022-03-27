@@ -13,12 +13,12 @@ const SectionFour = () => {
         <div className="">
           <Fade left distance="100px">
             <div className="relative -right-10">
-              <div className="absolute top-0 left-0 w-full h-full z-20 text-white flex flex-col justify-center items-center space-y-5">
-                <p className="text-3xl font-gothamMedium uppercase text-center text-white w-1/2">
+              <div className="absolute top-0 left-0 z-20 flex flex-col items-center justify-center w-full h-full space-y-5 text-white">
+                <p className="w-1/2 text-3xl text-center text-white uppercase font-gothamMedium">
                   atlantis Aquaventure
                 </p>
 
-                <p className="text-sm w-2/3 text-white text-center leading-loose">
+                <p className="w-2/3 text-sm leading-loose text-center text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maxime mollitia, molestiae quas vel sint commodi repudiandae
                   consequuntur voluptatum laborum numquam blanditiis harum
@@ -35,13 +35,13 @@ const SectionFour = () => {
 
         <div className="">
           <Fade top distance="100px" delay={500}>
-            <div className="relative -left-10 z-30 -bottom-40">
-              <div className="absolute top-0 left-0 w-full h-full z-20 text-white flex justify-center items-center">
+            <div className="relative z-30 -left-10 -bottom-40">
+              <div className="absolute top-0 left-0 z-20 flex items-center justify-center w-full h-full text-white">
                 <div className="w-60 h-60">
-                  <Image src={Logo} alt="" />
+                  <Image src={Logo} alt="" placeholder="blur" />
                 </div>
               </div>
-              <Image src={Img2} alt="" />
+              <Image src={Img2} alt="" placeholder="blur" />
             </div>
           </Fade>
         </div>

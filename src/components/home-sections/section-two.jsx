@@ -41,7 +41,7 @@ const SectionTwo = () => {
             <SwiperSlide key={idx}>
               <div className="space-y-5">
                 <Fade left distance="20px">
-                  <Image src={img} alt="header image" />
+                  <Image src={img} alt="" placeholder="blur" />
                 </Fade>
 
                 <Fade left distance="10px" delay={200}>

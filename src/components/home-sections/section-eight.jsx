@@ -30,7 +30,7 @@ const SectionEight = () => {
               <Button
                 variant="outline"
                 radius={0}
-                className="text-black border border-black hover:bg-black hover:text-white w-40 uppercase"
+                className="w-40 text-black uppercase border border-black hover:bg-black hover:text-white"
               >
                 Explore
               </Button>
@@ -39,7 +39,7 @@ const SectionEight = () => {
 
           <Fade bottom distance="50px" delay={500}>
             <div>
-              <Image src={Img1} alt="" />
+              <Image src={Img1} alt="" placeholder="blur" />
             </div>
           </Fade>
         </div>
@@ -47,7 +47,7 @@ const SectionEight = () => {
         <div className="grid grid-cols-2 gap-20 p-20">
           <Fade left distance="50px" delay={500}>
             <div>
-              <Image src={Img2} alt="" />
+              <Image src={Img2} alt="" placeholder="blur" />
             </div>
           </Fade>
 
@@ -67,7 +67,7 @@ const SectionEight = () => {
               <Button
                 variant="outline"
                 radius={0}
-                className="text-black border border-black hover:bg-black hover:text-white w-40 uppercase"
+                className="w-40 text-black uppercase border border-black hover:bg-black hover:text-white"
               >
                 Explore
               </Button>
@@ -92,7 +92,7 @@ const SectionEight = () => {
               <Button
                 variant="outline"
                 radius={0}
-                className="text-black border border-black hover:bg-black hover:text-white w-40 uppercase"
+                className="w-40 text-black uppercase border border-black hover:bg-black hover:text-white"
               >
                 Explore
               </Button>
@@ -101,7 +101,7 @@ const SectionEight = () => {
 
           <Fade top distance="50px" delay={500}>
             <div>
-              <Image src={Img3} alt="" />
+              <Image src={Img3} alt="" placeholder="blur" />
             </div>
           </Fade>
         </div>
@@ -109,7 +109,7 @@ const SectionEight = () => {
         <div className="grid grid-cols-2 gap-20 p-20">
           <Fade top distance="50px" delay={500}>
             <div>
-              <Image src={Img4} alt="" />
+              <Image src={Img4} alt="" placeholder="blur" />
             </div>
           </Fade>
 
@@ -129,7 +129,7 @@ const SectionEight = () => {
               <Button
                 variant="outline"
                 radius={0}
-                className="text-black border border-black hover:bg-black hover:text-white w-40 uppercase"
+                className="w-40 text-black uppercase border border-black hover:bg-black hover:text-white"
               >
                 Explore
               </Button>

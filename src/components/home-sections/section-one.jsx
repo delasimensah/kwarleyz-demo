@@ -12,14 +12,14 @@ const SectionOne = () => {
       <div className="grid grid-cols-5 gap-20">
         <div className="col-span-3">
           <Fade bottom distance="50px">
-            <Image src={Img} alt="" />
+            <Image src={Img} alt="" placeholder="blur" />
           </Fade>
         </div>
 
-        <div className="flex flex-col justify-center items-center space-y-5 col-span-2">
+        <div className="flex flex-col items-center justify-center col-span-2 space-y-5">
           <Fade left distance="100px" delay={500}>
             <div className="w-[130%] relative -left-[100px] z-20 space-y-5">
-              <div className="shadow-xl border border-gray-50 bg-white p-20 space-y-5">
+              <div className="p-20 space-y-5 bg-white border shadow-xl border-gray-50">
                 <p className="text-3xl font-gothamMedium uppercase text-left  text-[#53565A]">
                   No.1 Oxford street hotels & suites
                 </p>

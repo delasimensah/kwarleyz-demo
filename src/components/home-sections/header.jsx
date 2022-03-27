@@ -43,7 +43,11 @@ const Header = () => {
 
                 <Overlay />
 
-                <Image src={HeaderImage} alt="header image" />
+                <Image
+                  src={HeaderImage}
+                  alt="header image"
+                  placeholder="blur"
+                />
               </Box>
               <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>

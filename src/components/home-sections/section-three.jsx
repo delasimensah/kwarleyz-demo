@@ -9,7 +9,7 @@ const SectionThree = () => {
     <div className="p-20">
       <div className="grid grid-cols-3 gap-20">
         <Fade top distance="100px">
-          <div className="flex flex-col justify-center items-center space-y-5">
+          <div className="flex flex-col items-center justify-center space-y-5">
             <p className="text-3xl font-gothamMedium uppercase text-center w-2/3 text-[#53565A]">
               atlantis Aquaventure
             </p>
@@ -27,7 +27,7 @@ const SectionThree = () => {
 
         <div className="col-span-2">
           <Zoom delay={500}>
-            <Image src={Img} alt="" />
+            <Image src={Img} alt="" placeholder="blur" />
           </Zoom>
         </div>
       </div>

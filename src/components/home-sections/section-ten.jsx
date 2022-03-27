@@ -11,7 +11,7 @@ const SectionTen = () => {
     <div className="p-20">
       <div className="relative">
         <Fade left distance="100px">
-          <div className="absolute top-0 left-0 w-full h-full flex flex-col px-20 text-white z-10 justify-center space-y-5">
+          <div className="absolute top-0 left-0 z-10 flex flex-col justify-center w-full h-full px-20 space-y-5 text-white">
             <p className="text-3xl text-white font-gothamMedium">
               The African Dream
             </p>
@@ -32,7 +32,7 @@ const SectionTen = () => {
           </div>
         </Fade>
 
-        <Image src={Img} alt="header image" />
+        <Image src={Img} alt="" placeholder="blur" />
       </div>
     </div>
   );
