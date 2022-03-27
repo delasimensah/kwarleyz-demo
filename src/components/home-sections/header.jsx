@@ -1,5 +1,5 @@
 import React from "react";
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import HeaderImage from "../../assets/images/header1.png";
@@ -15,28 +15,32 @@ const Header = () => {
   return (
     <div className="relative h-screen">
       <Swiper
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay, EffectFade]}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 10000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         loop={true}
+        speed={1500}
       >
         {array.map((_, idx) => {
           return (
             <SwiperSlide key={idx}>
-              <div className="relative h-screen">
+              <div className="relative w-screen h-screen">
                 <Caption />
-
                 <Overlay />
-
-                <Image
-                  src={HeaderImage}
-                  alt="header image"
-                  placeholder="blur"
-                />
+                <div
+                  slot="container-start"
+                  className="absolute top-0 left-0 z-10 w-full h-full bg-center bg-cover"
+                >
+                  <Image
+                    src={HeaderImage}
+                    alt="header image"
+                    placeholder="blur"
+                  />
+                </div>
               </div>
             </SwiperSlide>
           );

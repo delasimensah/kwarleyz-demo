@@ -1,25 +1,31 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Navigation } from "swiper";
 import Image from "next/image";
 import { Fade } from "react-reveal";
 
 import Img1 from "../../assets/images/section6/img1.png";
 import Img2 from "../../assets/images/section6/img2.png";
+import Img3 from "../../assets/images/section6/img3.png";
 
-// import "./styles.css";
+import { Button } from "@mantine/core";
 
 const array = [
   { img: Img1 },
   { img: Img2 },
+  { img: Img3 },
   { img: Img1 },
   { img: Img2 },
+  { img: Img3 },
   { img: Img1 },
   { img: Img2 },
+  { img: Img3 },
   { img: Img1 },
   { img: Img2 },
+  { img: Img3 },
   { img: Img1 },
   { img: Img2 },
+  { img: Img3 },
 ];
 
 const SectionSix = () => {
@@ -70,6 +76,16 @@ const SectionSix = () => {
           })}
         </Swiper>
       </Fade>
+
+      <div className="flex items-center justify-center">
+        <Button
+          variant="filled"
+          className="bg-[#53565A] text-white hover:bg-white hover:text-[#53565A] hover:border hover:border-[#53565A] w-40 uppercase"
+          radius={0}
+        >
+          Know More
+        </Button>
+      </div>
     </div>
   );
 };
