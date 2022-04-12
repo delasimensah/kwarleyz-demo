@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 // mantine
 import { Button } from "@mantine/core";
 
-const Caption = () => {
+const Caption = ({ heading, description }) => {
   return (
     <div className="relative z-50 flex flex-col justify-center w-full h-full px-20 space-y-6 text-white bg-transparent">
       <motion.p
@@ -15,7 +15,7 @@ const Caption = () => {
         transition={{ duration: 1 }}
         className="text-4xl capitalize font-gothamMedium"
       >
-        {"You don't check-in; you move in "}
+        {heading}
       </motion.p>
 
       <motion.p
@@ -24,11 +24,7 @@ const Caption = () => {
         transition={{ duration: 1, delay: 1 }}
         className="w-1/2 leading-relaxed"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-        fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-        accusantium nemo autem.
+        {description}
       </motion.p>
 
       <motion.div

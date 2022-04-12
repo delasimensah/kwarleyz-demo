@@ -1,3 +1,5 @@
+import { createClient } from "contentful";
+
 // sections
 import Header from "../components/home-sections/header";
 import SectionOne from "../components/home-sections/section-one";
@@ -14,10 +16,10 @@ import SectionTen from "../components/home-sections/section-ten";
 // components
 import Layout from "../components/layout";
 
-const Home = () => {
+const Home = ({ slides }) => {
   return (
     <Layout>
-      <Header />
+      <Header slides={slides} />
       <SectionOne />
       <SectionTwo />
       <SectionThree />
@@ -33,3 +35,18 @@ const Home = () => {
 };
 
 export default Home;
+
+export async function getStaticProps() {
+  const client = createClient({
+    space: "vlsqjnkstcez",
+    accessToken: "GPqtNifehcFeg-XCShcBBG4uRrNT6CWH4gUTmmA2Haw",
+  });
+
+  const response = await client.getEntries({ content_type: "homeSlider" });
+
+  return {
+    props: {
+      slides: response.items,
+    },
+  };
+}

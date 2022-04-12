@@ -11,7 +11,8 @@ import AvailabilityForm from "../availability-form";
 
 const array = new Array(3).fill(0);
 
-const Header = () => {
+const Header = ({ slides }) => {
+  console.log(slides);
   return (
     <div>
       <Swiper
@@ -26,11 +27,14 @@ const Header = () => {
         loop={true}
         speed={2000}
       >
-        {array.map((_, idx) => {
+        {slides.map((slide) => {
           return (
-            <SwiperSlide key={idx}>
+            <SwiperSlide key={slide.sys.id}>
               <div className="relative w-screen h-screen">
-                <Caption />
+                <Caption
+                  heading={slide.fields.heading}
+                  description={slide.fields.description}
+                />
 
                 <Overlay />
                 <div
@@ -38,9 +42,11 @@ const Header = () => {
                   className="absolute top-0 left-0 z-10 w-full h-full bg-center bg-cover"
                 >
                   <Image
-                    src={HeaderImage}
+                    src={`https:${slide.fields.image.fields.file.url}`}
                     alt="header image"
-                    placeholder="blur"
+                    // placeholder="blur"
+                    height={slide.fields.image.fields.file.details.image.height}
+                    width={slide.fields.image.fields.file.details.image.width}
                   />
                 </div>
               </div>
