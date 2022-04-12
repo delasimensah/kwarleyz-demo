@@ -16,11 +16,16 @@ import SectionTen from "../components/home-sections/section-ten";
 // components
 import Layout from "../components/layout";
 
-const Home = ({ slides }) => {
+const client = createClient({
+  space: "vlsqjnkstcez",
+  accessToken: "GPqtNifehcFeg-XCShcBBG4uRrNT6CWH4gUTmmA2Haw",
+});
+
+const Home = ({ slides, sectionOneContent }) => {
   return (
     <Layout>
-      <Header slides={slides} />
-      <SectionOne />
+      {slides.length && <Header slides={slides} />}
+      {sectionOneContent && <SectionOne content={sectionOneContent} />}
       <SectionTwo />
       <SectionThree />
       <SectionFour />
@@ -37,16 +42,39 @@ const Home = ({ slides }) => {
 export default Home;
 
 export async function getStaticProps() {
-  const client = createClient({
-    space: "vlsqjnkstcez",
-    accessToken: "GPqtNifehcFeg-XCShcBBG4uRrNT6CWH4gUTmmA2Haw",
-  });
+  try {
+  } catch (error) {}
 
   const response = await client.getEntries({ content_type: "homeSlider" });
+  const res2 = await client.getEntry("262N6xOoZNvk8LkGEIZSUn");
+
+  const slides = response.items.map((item) => {
+    return {
+      id: item.sys.id,
+      image: {
+        src: `https:${item.fields.image.fields.file.url}`,
+        height: item.fields.image.fields.file.details.image.height,
+        width: item.fields.image.fields.file.details.image.width,
+      },
+      heading: item.fields.heading,
+      description: item.fields.description,
+    };
+  });
+
+  const sectionOneContent = {
+    image: {
+      src: `https:${res2.fields.image.fields.file.url}`,
+      height: res2.fields.image.fields.file.details.image.height,
+      width: res2.fields.image.fields.file.details.image.width,
+    },
+    title: res2.fields.title,
+    text: res2.fields.text,
+  };
 
   return {
     props: {
-      slides: response.items,
+      slides,
+      sectionOneContent,
     },
   };
 }

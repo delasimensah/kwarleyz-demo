@@ -6,18 +6,20 @@ import Img from "../../assets/images/section1/img1.png";
 
 import { Button } from "@mantine/core";
 
-const SectionOne = () => {
+const SectionOne = ({ content }) => {
   return (
     <div className="p-20">
       <div className="grid grid-cols-5 h-[600px]">
         <Fade bottom distance="100px">
           <div className="relative col-span-3">
             <Image
-              src={Img}
+              src={content.image.src}
               alt=""
-              placeholder="blur"
+              // placeholder="blur"
               layout="fill"
               objectFit="cover"
+              // height={content.image.height}
+              // width={content.image.width}
             />
           </div>
         </Fade>
@@ -27,17 +29,11 @@ const SectionOne = () => {
             <div className="w-[120%] -left-12 relative z-20 space-y-5">
               <div className="p-20 space-y-5 bg-white border shadow-xl border-gray-50">
                 <p className="text-3xl font-gothamMedium uppercase text-left  text-[#53565A]">
-                  No.1 Oxford street hotels & suites
+                  {content.title}
                 </p>
 
                 <p className="text-sm text-[#544F4F] text-left leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                  Veritatis obcaecati tenetur iure eius earum ut molestias
-                  architecto voluptate aliquam nihil,
+                  {content.text}
                 </p>
               </div>
 
